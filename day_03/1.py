@@ -17,10 +17,10 @@ def solve_2():
         (1, 2),
     ]
     product = 1
-    
+
     for right, down in patterns:
         product *= solve_path(right, down)
-    
+
     return product
 
 
@@ -39,7 +39,7 @@ def solve_path(right, down):
         x += down
         y += right
         y %= len(line)
-        
+
 
     return tree_count
 
